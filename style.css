@@ -60,6 +60,63 @@ footer{margin-top:27px}
 .footer-actions .pill{font-size:clamp(15px,2.8vw,19px);padding:7px 10px;min-height:44px}
 #feedback{min-height:23px;font-size:14px;text-align:center;line-height:1.35;margin:14px 0 0;overflow-wrap:anywhere}
 @media(min-width:680px){.app{padding-top:35px}.group{padding-inline:30px}.fields{gap:16px}.group.toned{padding-block:35px}}
-@media(max-width:480px){.app{padding:21px 15px 40px}.brand{min-height:72px}.brand-logo{height:72px}.clef{height:68px}.header-actions{margin-bottom:34px}.header-actions .pill{min-width:122px}.group{margin:28px 0 36px;padding:26px 12px 20px}.group h2{margin-top:-42px;min-width:145px}.fields{gap:10px}.fields input{height:44px;font-size:17px}.compact{width:84%;gap:18px}.date-centered{max-width:75%}.reg-two{grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:9px}.entry{font-size:14px}.grand{padding:11px 12px}.footer-actions{gap:8px}.footer-actions .pill{font-size:clamp(13px,3.4vw,17px);min-height:42px}}
-@media(max-width:350px){.app{padding-inline:9px}.compact{width:94%;gap:10px}.header-actions .pill{min-width:109px}.grand{font-size:17px}.group{padding-inline:10px}.footer-actions .pill{font-size:13px}}
+/* MOBILE V6 — disposição reproduzida da nova referência enviada (465 x 2048). */
+@media(max-width:600px){
+ html,body{max-width:100%;overflow-x:clip}
+ .app{width:100%;padding:21px clamp(15px,6.67vw,31px) 40px}
+ .brand{min-height:72px;gap:clamp(10px,3.5vw,17px)}
+ .brand-logo{width:clamp(115px,28vw,135px);height:72px}
+ .clef{width:clamp(24px,6.1vw,30px);height:70px}
+ h1{font-size:clamp(23px,5.7vw,29px);padding:3px 16px;margin:10px auto 14px;line-height:1.14;border-width:2px}
+ .header-actions{margin-bottom:26px;gap:7px}
+ .header-actions .pill{min-width:0;width:clamp(118px,31%,144px);min-height:34px;padding:5px 7px;font-size:clamp(15px,3.65vw,17px)}
+ .group{margin:20px 0 28px;padding:25px 13px 17px;border-width:1.6px;border-radius:11px}
+ .group.toned{border:2px dotted #756d6b}
+ .group:not([aria-labelledby="head-iniciais"]){padding-top:20px;padding-bottom:11px;margin-bottom:24px}
+ .group:not([aria-labelledby="head-iniciais"]) .fields{gap:5px}
+ .group:not([aria-labelledby="head-iniciais"]) .entries{margin-top:7px}
+ .group h2,.totals h2{font-size:clamp(15px,3.4vw,17px);min-width:120px;line-height:1.12;padding:2px 14px}
+ .group h2{margin:-37px auto 10px}
+ .fields{gap:7px}
+ .fields label{font-size:clamp(13px,3.08vw,15px);line-height:1.16}
+ .fields input{height:32px;margin-top:4px;padding:4px 10px;font-size:16px;border:1.4px solid #827a78;box-shadow:none}
+ .fields input[type=date]{height:32px;min-height:32px;width:100%;min-width:0;max-width:100%;font-size:16px;padding:3px 9px;border-radius:50px;background:#fff;-webkit-appearance:none;appearance:none}
+ .fields input[type=date]::-webkit-date-and-time-value{width:100%;min-width:0;text-align:center}
+ .fields input[type=date]::-webkit-datetime-edit{min-width:0;white-space:nowrap}
+ .two{gap:11px}
+ .compact{width:82%;gap:30px}
+ .wide-centered{max-width:82%}
+ .date-centered{max-width:65%}
+ .reg-two{grid-template-columns:minmax(0,1.22fr) minmax(0,.87fr);gap:9px}
+ .form-button{width:min(52%,202px);min-width:0;min-height:32px;margin:2px auto 0;padding:4px 11px;font-size:clamp(15px,3.55vw,17px)}
+ .quantity{width:min(37%,160px)!important}
+ .hymn{width:60%;max-width:none;align-self:center}
+ .entries{margin-top:12px}
+ .entry{min-height:27px;margin:2px 0;gap:3px;font-size:clamp(12px,2.8vw,14px);line-height:1.2}
+ .entry button{min-width:28px;min-height:30px;padding:2px}
+ .entry button img{width:18px;height:20px}
+ .totals{margin:27px 0 0}
+ .totals h2{margin:0 auto 27px;min-width:150px}
+ .total-list{padding:0 12px 17px}
+ .total-row{font-size:clamp(19px,4.3vw,23px);line-height:1.18;margin-bottom:5px}
+ .total-summary{gap:8px;margin-top:16px}
+ .grand{padding:10px 12px;font-size:clamp(18px,4.25vw,22px);line-height:1.2}
+ footer{margin-top:28px}
+ .footer-actions{grid-template-columns:minmax(0,1fr) minmax(0,1.85fr);gap:9px 9px}
+ .footer-actions .pill{min-height:38px;padding:5px 7px;font-size:clamp(14px,3.25vw,16px);line-height:1.12}
+ #feedback{font-size:13px;margin-top:10px}
+}
+@media(max-width:375px){
+ .app{padding-inline:15px}
+ .brand{gap:9px}
+ .brand-logo{width:120px}
+ .clef{width:24px}
+ .group{padding-inline:10px}
+ .compact{gap:10px;width:95%}
+ .wide-centered{max-width:89%}
+ .date-centered{max-width:76%}
+ .hymn{width:75%}
+ .grand{font-size:16px}
+ .footer-actions .pill{font-size:13px}
+}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pill{transition:none}}

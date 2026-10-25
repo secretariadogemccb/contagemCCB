@@ -1,11 +1,11 @@
-# CONTAGEM CCB — Redesign V5
+# CONTAGEM CCB — Mobile V6
 
 Projeto estático **HTML + CSS + JavaScript** pronto para GitHub Pages. Backend Java 21 opcional na pasta `backend-java21`.
 
 ## Publicar no GitHub Pages
 
 1. Extraia o ZIP.
-2. Envie **o conteúdo da pasta** `CONTAGEM_CCB_REDESIGN_V5` para a raiz do repositório (o `index.html` deve ficar na raiz).
+2. Envie **o conteúdo da pasta** `CONTAGEM_CCB_MOBILE_V6` para a raiz do repositório (o `index.html` deve ficar na raiz).
 3. Em **Settings → Pages**, selecione **Deploy from a branch**, `main`, `/ (root)`.
 4. Aguarde o GitHub Pages atualizar. Se a versão antiga permanecer, recarregue sem cache.
 
@@ -33,3 +33,10 @@ O GitHub Pages **não executa Java**. O servidor Java 21 incluído em `backend-j
 ## Arquivos
 
 `index.html`, `style.css`, `app.js`, `pdf-export.js`, `docx-export.js`, `assets/`, `MODELO_ORIGINAL_ENVIADO.pdf`, `.nojekyll`, `backend-java21/`.
+
+## Atualização V6 — mobile
+
+- Layout mobile refinado conforme última imagem: blocos com margens maiores, alinhamento central e alternância de cores.
+- Fontes e caixas responsivas; campo Data corrigido para não ultrapassar o contorno no Safari iOS.
+- Apenas HTML (versão CSS de cache) e CSS alterados: cadastro, armazenamento, PDF, Word e WhatsApp mantidos.
+- O arquivo `index.html` usa `style.css?v=6-mobile` para evitar carregar o CSS antigo em aparelhos móveis.
