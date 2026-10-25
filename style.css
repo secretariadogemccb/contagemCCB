@@ -121,3 +121,26 @@ footer{margin-top:27px}
  .footer-actions .pill{font-size:13px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pill{transition:none}}
+
+/* V7 — tipografia ampliada SOMENTE em telas mobile; desktop preservado. */
+@media (max-width: 600px) {
+  h1 {font-size:clamp(26px, 6.5vw, 33px);}
+  .group h2, .totals h2 {font-size:clamp(17px, 4.1vw, 20px);}
+  .fields label {font-size:clamp(16px, 3.85vw, 19px); line-height:1.26;}
+  .fields input {font-size:clamp(17px, 4vw, 19px); height:39px; min-height:39px;}
+  .fields input[type=date] {font-size:16px; height:39px; min-height:39px;}
+  .header-actions .pill {font-size:clamp(16px, 4vw, 19px); min-height:40px;}
+  .form-button {font-size:clamp(17px, 4.15vw, 20px); min-height:39px;}
+  .entry {font-size:clamp(16px, 3.65vw, 18px); line-height:1.35; min-height:35px;}
+  .entry button {min-height:36px; min-width:31px;}
+  .entry button img {width:21px; height:23px;}
+  .total-row {font-size:clamp(21px, 5vw, 26px);}
+  .grand {font-size:clamp(19px, 4.65vw, 24px); line-height:1.26;}
+  .footer-actions .pill {font-size:clamp(16px, 3.65vw, 19px); min-height:45px;}
+  #feedback {font-size:16px;}
+}
+@media (max-width: 375px) {
+  .footer-actions .pill {font-size:15.5px; padding-inline:4px;}
+  .grand {font-size:18px;}
+  .group h2 {max-width:100%;}
+}
