@@ -1,5 +1,3 @@
-.idea/
-*.class
-out/
-target/
+backend-java21/**/*.class
+backend-java21/dados-evento.json
 .DS_Store
