@@ -21,3 +21,56 @@
   .double > label { overflow:hidden; }
   .double input[type="date"] { font-size:14px; padding-inline:3px; }
 }
+
+/* V4 — campos maiores, adaptação integral para telas móveis e controles touch */
+body {background:#fff;color:#747578}
+.app {max-width:760px;padding:38px clamp(14px,4.5vw,40px) 65px;box-shadow:none}
+.brand {height:118px;gap:clamp(16px,5vw,45px)}
+.brand-logo {width:clamp(160px,31vw,225px);max-height:116px}
+.clef {width:clamp(30px,7vw,55px);height:100px}
+h1 {font-size:clamp(29px,6vw,40px);padding:6px 24px;margin-top:22px}
+.actions.top {margin:34px 0 52px}
+.pill {font-size:clamp(17px,3.5vw,23px);min-height:48px;padding:10px 18px;border-radius:30px}
+.group {margin:35px 0 44px;padding:32px clamp(14px,3vw,28px) 27px;border-width:2px;border-style:dotted;border-radius:25px}
+.group h2,.totals h2 {font-size:clamp(18px,4vw,23px);margin-top:-49px;min-width:min(65%,270px);padding:5px 13px}
+.fields {gap:17px}
+.fields label,.inline-form label {font-size:clamp(16px,3.5vw,20px)}
+.fields input,.inline-form input {height:clamp(49px,11vw,60px);font-size:clamp(17px,3.6vw,21px);border-radius:34px;padding:7px 13px;margin-top:8px;min-width:0;max-width:100%}
+.fields input[type=date]{height:clamp(49px,11vw,60px);font-size:clamp(16px,3vw,19px);-webkit-appearance:auto;appearance:auto;padding-inline:5px}
+.double {grid-template-columns:minmax(0,1.35fr) minmax(0,1fr)}
+.triple {grid-template-columns:minmax(0,2fr) minmax(0,1fr) minmax(0,1fr)}
+.inline-form {grid-template-columns:minmax(0,1fr) minmax(66px, .3fr) minmax(85px,.33fr)}
+.inline-form.reg {grid-template-columns:minmax(0,1fr) minmax(145px,.5fr)}
+.entry {font-size:clamp(16px,3vw,19px);line-height:1.4;margin:13px 3px}
+.entry button {min-width:35px;min-height:36px}.entry button img {width:24px;height:26px}
+.totals {margin-top:58px}.totals h2 {margin:0 auto 27px}
+.total-row{font-size:clamp(21px,4vw,27px);padding:3px 7px}
+.grand {font-size:clamp(18px,3.5vw,23px);font-weight:800;border:2px dashed #7d7e80;background:#e5e5e7;padding:14px 16px;border-radius:8px;display:flex;justify-content:space-between;gap:12px;margin:12px 0}
+.grand:first-of-type {background:#797a7e;color:white}.grand strong {font-size:1.1em}
+footer .actions {display:grid;grid-template-columns:1fr 1fr;gap:12px}
+footer .pill {min-width:0;width:100%;min-height:55px;font-size:clamp(15px,3vw,21px)}
+#feedback {font-size:16px}
+@media(max-width:560px){
+ .app{padding:24px 14px 62px}
+ .brand{height:103px;gap:clamp(12px,4vw,28px)}.brand-logo{width:47%;max-width:205px}
+ .clef{width:10%;height:78px}
+ .group{margin:32px 2px 40px;padding:30px 12px 22px}
+ .group h2{margin-top:-45px}
+ .fields label,.inline-form label{font-size:clamp(15px,3.8vw,19px)}
+ .fields input,.inline-form input{font-size:17px;height:52px}
+ .double{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:9px}
+ .double>label {overflow:visible}
+ .double input[type=date]{font-size:16px;padding-inline:2px;min-width:0}
+ .triple{grid-template-columns:minmax(0,1.8fr) minmax(0,.9fr) minmax(0,.9fr);gap:7px}
+ .inline-form{grid-template-columns:minmax(0,1fr) minmax(55px,.28fr) minmax(79px,.37fr);gap:6px}
+ .inline-form.reg{grid-template-columns:minmax(0,1fr) minmax(118px,.55fr)}
+ .inline-form .pill{font-size:clamp(14px,3.3vw,17px);padding:6px 7px;min-height:51px}
+ footer .pill{font-size:clamp(14px,3.3vw,18px)}
+}
+@media(max-width:370px){
+ .app{padding-inline:9px}.group{padding-inline:9px}
+ .double{grid-template-columns:minmax(0,1fr) minmax(0,.92fr)}
+ .inline-form{grid-template-columns:minmax(0,1fr) 50px 72px}
+ .inline-form.reg{grid-template-columns:minmax(0,1fr) 105px}
+ .grand{padding:11px 9px;font-size:17px}
+}
